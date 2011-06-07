@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>OpenSesameRepository</servlet-name>
+		<servlet-class>com.nambar.opensesame.repository.OpenSesameRepositoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OpenSesameRepository</servlet-name>
+		<url-pattern>/opensesamerepository</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchGate</servlet-name>
+		<servlet-class>com.nambar.opensesame.repository.SearchGateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchGate</servlet-name>
+		<url-pattern>/searchgate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddGate</servlet-name>
+		<servlet-class>com.nambar.opensesame.repository.AddGateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddGate</servlet-name>
+		<url-pattern>/addgate</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

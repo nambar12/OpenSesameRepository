@@ -1,0 +1,10 @@
+<!-- Indices written at Sat, 4 Jun 2011 12:11:38 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="gate" ancestor="true" source="auto">
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>
